@@ -1,34 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/lightbox.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Lightbox</title>
 
-	
+
 </head>
+
 <body>
+<main>
+	<h1>Projects</h1>
+	<div class="controls">
+		<button type="button" class="control" data-filter="all">All</button>
+		<button type="button" class="control"data-toggle=".green">Green</button>
+		<button type="button" class="control" data-toggle=".blue">Blue</button>
+		<button type="button" class="control" data-toggle=".pink">Pink</button>
+	</div>
 
-	<div class="gallery">
-		<a class="example-image-link" href="img/veritas.png" data-lightbox="example-set" data-title="Veritas Internship Project"><img class="example-image" src="img/veritas.png" alt=""/></a>
+	<div class="gallery container">
+		
+			<a class="example-image-link mix green" href="img/veritas.png" data-lightbox="example-set" data-title="Veritas Internship Project" aria-label="Veritas Project">
+				<img class="example-image" src="img/veritas.png" alt="" />
+			</a>
+		
 
-		<a class="example-image-link" href="img/amesite.png" data-lightbox="example-set" data-title="Amesite UX Design Project"><img class="example-image" src="img/amesite.png" alt="" /></a>
-
-		<a class="example-image-link" href="img/youtube.png" data-lightbox="example-set" data-title="YouTube Projects."><img class="example-image" src="img/youtube.png" alt="" /></a>
-
-		<a class="example-image-link" href="img/toilet.png" data-lightbox="example-set" data-title="Porta Porty Market Research Project"><img class="example-image" src="img/toilet.png" alt="" /></a>
-
-		<a class="example-image-link" href="img/Xer.png" data-lightbox="example-set" data-title="Travel AR Project"><img class="example-image" src="img/Xer.png" alt="" /></a>
-
-		<a class="example-image-link" href="img/nz.png" data-lightbox="example-set" data-title="Neutral Zone Project"><img class="example-image" src="img/nz.png" alt="" /></a>
-	  </div>
 	
+			<a class="example-image-link mix green" href="img/amesite.png" data-lightbox="example-set" data-title="Amesite UX Design Project" ariel-label="Amesite UX Design Project">
+				<img class="example-image" src="img/amesite.png" alt="" />
+			</a>
 	
+
+
+	
+			<a class="example-image-link mix blue" href="img/youtube.png" data-lightbox="example-set" data-title="YouTube Projects." ariel-label="YouTube Projects">
+				<img class="example-image" src="img/youtube.png" alt="" />
+			</a>
+	
+
+		
+			<a class="example-image-link mix blue" href="img/toilet.png" data-lightbox="example-set" data-title="Porta Porty Market Research Project" ariel-label="Porta Porty Market Research Projects">
+				<img class="example-image" src="img/toilet.png" alt="" />
+			</a>
+	
+
+		
+			<a class="example-image-link mix pink" href="img/Xer.png" data-lightbox="example-set" data-title="Travel AR Project" ariel-label="Travel AR Project">
+				<img class="example-image" src="img/Xer.png" alt="" />
+			</a>
+		
+
+			<a class="example-image-link mix pink" href="img/nz.png" data-lightbox="example-set" data-title="Neutral Zone Project" ariel-label="Neutral Zone Project">
+				<img class="example-image" src="img/nz.png" alt="" />
+			</a>
+
+			<a class="example-image-link mix blue" href="img/dance.png" data-lightbox="example-set" data-title="Dance Project"
+			ariel-label="Dance Project">
+				<img class="example-image" src="img/dance.png" alt="" />
+			</a>
+
+			<a class="example-image-link mix pink" href="img/tower.png" data-lightbox="example-set" data-title="Tower Project" ariel-label="Tower Project">
+				<img class="example-image" src="img/tower.png" alt="" />
+			</a>
+
+			<a class="example-image-link mix pink" href="img/porta.png" data-lightbox="example-set" data-title="Porta Porty Project"
+			ariel-label="Porta Porty Project">
+				<img class="example-image" src="img/porta.png" alt="" />
+			</a>
+
+<!-- 
+		<div class="gap"></div>
+		<div class="gap"></div>
+		<div class="gap"></div> -->
+
+	</div>
+
+
 	<script src="js/lightbox-plus-jquery.js"></script>
+	<script src="js/mixitup.js"></script>
+	<script>
+		var containerEl = document.querySelector('.container');
+
+		var mixer = mixitup(containerEl);
+
+	</script>
 
 
-
+</main>
 </body>
+
 </html>
